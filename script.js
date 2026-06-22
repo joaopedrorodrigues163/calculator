@@ -6,6 +6,15 @@ function clean (num){
     document. getElementById ('resultado'). innerHTML="";
 }
 function back (){
-    var numero = document. getElementById ('resultado'). innerHTML;
-    document getElementById ('resultado'). innerHTML=reaultado. substring (0,resultado.length-1);
+    var resultado = document. getElementById ('resultado'). innerHTML;
+    documentgetElementById ('resultado'). innerHTML=reaultado. substring (0,resultado.length-1);
+}
+function calcular() {
+   var resultado=document.getElementById ('resultado').innerHTML;
+   if(resultado) {
+    document.getElementById('resultado').innerHTML=eval(resultado);
+   }
+    else {
+        document.getElementById('resultado').innerHTML="Nada para calcular";
+    }
 }
